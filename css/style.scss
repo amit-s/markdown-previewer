@@ -1,0 +1,31 @@
+$width: 400px;
+$height: 500px;
+
+%box-dimensions{
+	width: $width;
+	height: $height;
+}
+
+%flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#input{
+	margin: 30px;
+	@extend %box-dimensions;
+}
+
+#output{
+	margin-top: 20px;
+	@extend %box-dimensions;
+}
+
+#container{
+	@extend %flexbox;
+	flex-wrap: wrap;
+	justify-content: center;
+}
